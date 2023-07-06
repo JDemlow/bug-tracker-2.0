@@ -1,11 +1,8 @@
-import "../index.css";
 import Employee from "../compontents/Employee";
 import { useState, useEffect } from "react";
-import TodoApp from "../compontents/TodoApp";
 import AddEmployee from "../compontents/AddEmployee";
 import EditEmployee from "../compontents/EditEmployee";
 import { db } from "../firebase";
-import Header from "../compontents/Header";
 import {
   collection,
   onSnapshot,
@@ -64,7 +61,7 @@ function Employees() {
 
   const showEmployees = true;
   return (
-    <div className="App min-h-screen bg-gradient-to-r from-[#d69c28] to-[#fe642a]">
+    <div className="App min-h-screen bg-gradient-to-r from-[#3C6E71] to-[#284B63]">
       {showEmployees ? (
         <>
           <div className="flex flex-wrap justify-center p-4">
@@ -94,7 +91,7 @@ function Employees() {
             })}
           </div>
 
-          <div className="flex flex-wrap justify-center bg-gradient-to-r from-[#d69c28] to-[#fe642a] p-4">
+          <div className="flex flex-wrap justify-center bg-gradient-to-r from-[#3C6E71] to-[#284B63] p-4">
             <AddEmployee newEmployee={newEmployee} />
           </div>
         </>
